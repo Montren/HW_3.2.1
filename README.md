@@ -1,5 +1,8 @@
 # Запуск системы и теста
-1 . Для первого запуска SUT используйте команду: 
+1 . Для первого запуска SUT используйте команды: 
+* docker-compose up -d
+* docker-machine start default
+* docker-machine env
 * java -jar artifacts/app-deadline.jar -P:jdbc.url=jdbc:mysql://192.168.99.100:3306/app -P:jdbc.user=app -P:jdbc.password=pass
 
 2 . Перед запуском теста используйте команду:
